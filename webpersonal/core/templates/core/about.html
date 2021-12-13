@@ -1,0 +1,29 @@
+
+{% extends "core/base.html" %}
+
+{% block title %} Acerca de..... {% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/about-bg1.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+      <div class="row">   
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+          <img class="img-fluid avatar" src="{% static 'core/img/avatar.png' %}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+          <h2 class="section-heading">Levi Mezones</h2>   
+          <p>Nacido en Manta un 2 de Mayo de 2001, ha comenzado desde hace poco a interesarse en el juego de cartas Yu-Gi-Oh</p>
+          <p>En esta pagina se tomara en cuenta los diferentes mazos que vaya probando a lo largo del tiempo que juegue con este tipo de invocación</p>
+        </div>
+      </div>  
+    </div>
+{% endblock %}
+
+
+   
